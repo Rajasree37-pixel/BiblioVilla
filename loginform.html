@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="loginform2.css">
+</head>
+<body>
+     <img src="logo2.png" alt="Logo" class="logo">
+     <img src="illustration.png" alt="Illustration" class="illustration">
+     <p class="bottom-text">A well-managed library is a universe at your fingertips.</p>
+
+    <div class="login-container">
+        <h3>Please enter your details</h3>
+        <h1>Welcome.</h1>
+        <!-- Added method="POST" and action="login.php" -->
+        <form method="POST" action="login.php" id="loginForm">
+            <input type="text" name="roll_number" placeholder="Enter your Roll no" required minlength="12">
+            <input type="password" name="password" placeholder="Password" required>
+            <a href="#" class="forgot-password">Forgot password</a>
+            <br><br><br>
+            <button type="submit" class="confirm-btn">Confirm</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>

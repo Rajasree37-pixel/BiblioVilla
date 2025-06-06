@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0E4D8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-right: 250px;
+
+}
+
+.login-container {
+    background: #F0E4D8;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+h1 {
+    font-family:Inria Serif;
+    color: #693311;
+    margin-bottom: 30px;
+     text-align: left;
+     font-weight: normal;
+
+}
+
+h3 {
+    font-family:Inria Serif;
+    color: #8b5e3b;
+    font-weight: normal;
+    margin-bottom: -10px;
+     text-align: left;
+}
+
+input {
+    width: 94%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: blue;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    text-decoration: none;
+    background-color: #f59c42;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+.logo {
+    width: 190px; 
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+.illustration {
+    width: 40%; 
+    height: 50%; 
+   display: block;
+     margin: 0px 250px 30px 70px; 
+     
+}
+.bottom-text {
+    font-family:Inria Serif;
+    font-weight: normal;
+    color: #693311;
+   position: fixed;
+    bottom: 60px;
+    left: 90px;
+     text-align: center;
+    font-size: 36px;
+    width: 500px;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-container input {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+

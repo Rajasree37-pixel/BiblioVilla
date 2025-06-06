@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    }
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navbar a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #6b4226;
+    font-weight: bold;
+}
+.icons {
+    display: flex;
+    gap: 15px;
+}
+.icons img {
+    width: 20px;
+}
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+/* Notifications Section */
+.notifications-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.notifications-container h2 {
+    font-size: 24px;
+    color: #8B572A;
+    border-left: 4px solid #F4A531;
+    padding-left: 10px;
+}
+.notification-list {
+    margin-top: 20px;
+}
+.notification {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.notification img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.notification p {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+.notification .time {
+    color: gray;
+    font-size: 14px;
+}

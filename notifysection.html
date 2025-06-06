@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - Bibliovilla</title>
+    <link rel="stylesheet" href="notifysection.css">
+    <link rel="manifest" href="/manifest.json"> 
+</head>
+<body>
+<header>
+        <div class="logo">
+            <img src="logo3.png" alt="Bibliovilla Logo">
+        </div>
+        <nav class="navbar">
+            <a href="homesection.html">HOME</a>
+            <a href="booksection.html">BOOKS</a>
+            <a href="questionpaper.html">QUESTION PAPERS</a>
+            <a href="profile.html">MY PROFILE</a>
+            <div class="icons">
+                <a href="notifysection.html"><img src="Alarm.svg" alt="Notifications"></a>
+                <a href="cart.html"><img src="cart.svg" alt="Cart"></a>
+            </div>
+        </nav>
+    </header>
+<main>
+        <div class="notifications-container">
+            <h2>Notifications & Reminders</h2>
+<div class="notification-list">
+                <div class="notification">
+                    <img src="mail.png" alt="Email Icon">
+                    <p>Your exam results are out!</p>
+                    <span class="time">5 min ago</span>
+                </div>
+<div class="notification">
+                    <img src="bell.png" alt="Bell Icon">
+                    <p>Your due date is near!</p>
+                    <span class="time">1 hr ago</span>
+                </div>
+            </div><br><br>
+<!-- Push Notification Opt-In -->
+             <div class="push-notification-opt-in">
+                <input type="checkbox" id="enable-push" name="enable_push">
+                <label for="enable-push">Enable Push Notifications for New Book Arrivals!</label>
+                <p id="push-status" style="display:none; color: green;">Push Notifications Enabled!</p>
+                <p id="push-disabled" style="display:none; color: red;">Push Notifications Disabled!</p>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

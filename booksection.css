@@ -1,0 +1,77 @@
+body {
+    font-family: 'crimpson pro', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf5f0;
+    color: #5a3826;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    }
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navbar a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #6b4226;
+    font-weight: bold;
+}
+.icons {
+    display: flex;
+    gap: 15px;
+}
+.icons img {
+    width: 20px;
+}
+main {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-left: -40px;
+}
+.category {
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 20px;
+    }
+h2 {
+    font-size: 24px;
+    color: #8b5e3c;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px; /* Reduced vertical spacing */
+    column-gap: 0x; /* Keeps horizontal spacing close */
+    justify-content: start;
+    max-width: 1050px;
+}
+.book-grid img {
+    width: 100%;
+    max-width: 180px;
+    height: 210px;
+    background-color: #f7f3ef;
+    border: 1px solid #c2a28b;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+

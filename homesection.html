@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliovilla</title>
+    <link rel="stylesheet" href="homesection.css"> 
+    
+</head>
+<body>
+
+    <section class="herosection" id = "home">
+    <header>
+        <div class="logo">
+            <img src="logo3.png" alt="Bibliovilla Logo">
+        </div>
+        <nav class="navbar">
+            <a href= "homesection.html">HOME</a>
+            <a href="booksection.html">BOOKS</a>
+            <a href="questionpaper.html">QUESTION PAPERS</a>
+            <a href="profile.html">MY PROFILE</a>
+            <div class="icons">
+                <a href="notifysection.html"><img src="Alarm.svg" alt="Notifications"></a>
+                <a href="cart.html"><img src="cart.svg" alt="Cart"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to <br> Bibliovilla</h1>
+            <p>Your go-to platform for library management.</p>
+            <div class="search-box">
+                <input type="text" id="bookSearch" list="bookList" placeholder="Search for books...">
+                <datalist id="bookList">
+                    <option value="DIFFERENTIAL & INTEGRAL CALCULUS">
+                    <option value="DESCRIPTIVE STATISTICS & PROBABILITY">
+                    <option value="PROGRAMMING IN C">
+                    <option value="THE ENGLISH TURF">
+                </datalist>
+                <button onclick="searchBook()">Search</button>
+            </div>
+            
+            <script>
+                function searchBook() {
+                    let input = document.getElementById("bookSearch").value.toLowerCase();
+                    let bookPages = {
+                        "differential & integral calculus": "bookinfoM.html",
+                        "descriptive statistics & probability": "bookinfoS.html",
+                        "programming in c": "bookinfoC.html",
+                        "the english turf": "bookinfoE.html"
+                    };
+            
+                    if (bookPages[input]) {
+                        window.location.href = bookPages[input];
+                    } else {
+                        alert("Book not found!");
+                    }
+                }
+            </script>
+            
+        </div>
+        
+    </section>
+    </section>
+    <!-- Available Books Section -->
+ <section class="available-books">
+    <div class="books-header">
+        <h2>Available books</h2>
+        
+        <button class="view-all" onclick="window.location.href='booksection.html'">View all</button>
+    </div>
+    
+    <div class="books-container">
+        <div class="book">
+            <div class="book-cover">
+                <a href="bookinfoM.html"><img src="m1.jpg" style="width: 200px; height: 280px; border-radius: 10px; "></a>  
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-cover">
+                <a href="bookinfoS.html"><img src="s1.jpg" style="width: 200px; height: 280px; border-radius: 10px; "></a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-cover">
+                <a href="bookinfoC.html"><img src="c1.jpg" style="width: 200px; height: 280px; border-radius: 10px; "></a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-cover">
+                <a href="bookinfoE.html"><img src="e1.jpg" style="width: 200px; height: 280px; border-radius: 10px; "></a>
+            </div>
+        </div>
+       
+    </div>
+ </section>
+ <section class="category-questionpaper">
+    <!-- category Section -->
+ <section class="category-section">
+        <h1 class="category-title">Category</h1>
+        <div class="category-grid">
+            <div class="category-item">
+                <a href="booksection.html#maths">
+                    <img src="maths.png" alt="Mathematics">
+                </a>
+                <p>MATHEMATICS</p>
+            </div>
+            <div class="category-item">
+                <a href="booksection.html#stats">
+                    <img src="stats.png" alt="Statistics">
+                </a>
+                <p>STATISTICS</p>
+            </div>
+            <div class="category-item">
+                <a href="booksection.html#eng">
+                    <img src="eng.png" alt="English">
+                </a>
+                <p>ENGLISH</p>
+            </div>
+            <div class="category-item">
+                <a href="booksection.html#comps">
+                    <img src="comp.png" alt="Computer Science">
+                </a>
+                <p>COMPUTER SCIENCE</p>
+            </div>
+        </div>
+    </section>
+    <!-- Question paper Section -->
+    <section class="question-papers-section">
+        <h1 class="question-papers-title">Question papers</h1>
+        <div class="question-papers-grid">
+            <div class="question-paper">
+                <a href="questionpaper.html">
+                    <img src="QP1.png" alt="1st Year">
+                </a>
+                
+            </div>
+            <div class="question-paper">
+                <a href="questionpaper.html">
+                    <img src="QP2.png" alt="2nd Year">
+                </a>
+                
+            </div>
+            <div class="question-paper">
+                <a href="questionpaper.html">
+                    <img src="QP3.png" alt="3rd Year">
+                </a>
+                
+            </div>
+        </div>
+    </section>
+</section>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="logo3.png" alt="Bibliovilla Logo">
+                </a>
+                
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-section">
+                <h3>NAVIGATION</h3>
+                <ul>
+                    <li><a href="homesection.html">HOME</a></li>
+                    <li><a href="#">BOOKS</a></li>
+                    <li><a href="questionpaper.html">QUESTION PAPERS</a></li>
+                    <li><a href="profile.html">MY PROFILE</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="footer-section">
+                <h3>CONTACT US </h3>
+                <p><a href="tel:+1230085963">+123-00-85963</a></p>
+                <p><a href="https://www.villamariecollege.ac.in" target="_blank">www.villamariecollege.ac.in</a></p>
+                <p>
+                    <a href="https://maps.google.com/?q=6-3-1089,RajBhavanRoad,Somajiguda,Hyderabad500082" target="_blank">
+                        # 6-3-1089, Raj Bhavan Road,<br>
+                        Somajiguda, Hyderabad 500082
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>© All rights reserved</p>
+        </div>
+    </footer>
+
+    
+    
+
+</body>
+</html>

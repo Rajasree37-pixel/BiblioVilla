@@ -1,0 +1,140 @@
+body {
+    
+    font-family: 'crimpson pro', serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    color: #6b4226;
+   
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #6b4226;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons img {
+    width: 20px;
+}
+
+.book-container {
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.book-image {
+    width: 250px;
+    height: 350px;
+    background-color: #f0f0f0;
+    border: 2px solid #c4a484;
+    margin-right: 40px;
+    border-radius: 15px;
+}
+
+
+.book-details {
+    text-align: left;
+    font-size: 18px;
+    color: #5a3510;
+    margin-left: 65px;
+    margin-top: -120px;
+}
+ .book-details p {
+    margin-bottom: 15px;
+ }
+
+.availability {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.yes {
+    color: green;
+}
+
+
+.add-to-cart {
+    background-color: #f4a531;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.borrow {
+    background-color: #5a3510;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.add-to-cart,
+.borrow {
+    width: 100%; /* Make buttons take full width */
+    max-width: 250px; /* Set a max width to prevent excessive stretching */
+    display: block; /* Stack buttons */
+    text-align: center;
+    margin-top: 20px;
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: right;
+    
+    margin-right: 250px;
+}
+
+.arrow {
+    background: #f4a531;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
